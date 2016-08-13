@@ -1,0 +1,15 @@
+---
+ - hosts: localhost
+   connection: local
+   sudo: yes
+   roles:
+       - git
+       - mosh
+       - vim
+       - java
+       - gimp
+       - xfig
+       - go
+       - docker
+       - dev 
+       - vinagre 

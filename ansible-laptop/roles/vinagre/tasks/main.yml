@@ -1,0 +1,3 @@
+---
+- name: Install vinagre
+  apt: name=vinagre state=present 

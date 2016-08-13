@@ -1,0 +1,3 @@
+---
+- name: Install gimp
+  apt: name=gimp state=present 
