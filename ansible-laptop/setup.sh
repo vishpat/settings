@@ -1,3 +1,4 @@
 #!/bin/sh
 
-ansible-playbook -i "localhost," -c local
+set -x
+ansible-playbook -i "localhost," -c local setup.yml --ask-sudo-pass

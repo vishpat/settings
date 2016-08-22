@@ -3,4 +3,10 @@
   apt: name=build-essential state=present
 
 - name: Install python pip 
-  apt: name=python-pip state=present 
+  apt: name=python-pip state=present
+
+- name: Install tree 
+  apt: name=tree state=present
+
+- name: Install ruby and it's crap
+  apt: name=rubygems  
