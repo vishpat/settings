@@ -3,13 +3,13 @@
    connection: local
    sudo: yes
    roles:
-       - git
+#       - git
        - mosh
        - vim
        - java
        - gimp
        - xfig
-       - go
+#       - go
        - docker
        - dev 
        - vinagre 
