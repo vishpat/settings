@@ -1,3 +1,6 @@
 ---
 - name: Install java 
-  apt: name=openjdk-8-jdk state=present 
+  apt: name=openjdk-8-jdk state=present
+
+- name: Install maven
+  apt: name=maven state=present  
