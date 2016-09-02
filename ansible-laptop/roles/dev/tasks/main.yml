@@ -1,16 +1,18 @@
 ---
-- name: Install build essential 
-  apt: name=build-essential state=present
-
 - name: Install python pip 
   apt: name=python-pip state=present
 
 - name: Install tree 
   apt: name=tree state=present
 
-- name: Install cmake 
-  apt: name=cmake state=present
-
+- name: Install C dev tools
+  apt: name={{ item }} state=present
+  with_items:
+    - build-essential
+    - cmake
+    - python-dev
+    - python3-dev
+  
 - name: Install ruby and it's crap
   apt: name={{ item }} state=present
   with_items:
