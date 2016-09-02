@@ -1,7 +1,6 @@
 "
 " First install vundle
-" git clone https://github.com/VundleVim/Vundle.vim.git
-" ~/.vim/bundle/Vundle.vim
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "
 
 set nocompatible              " be iMproved, required
@@ -15,8 +14,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'Valloric/YouCompleteMe'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
