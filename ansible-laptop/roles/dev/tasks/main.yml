@@ -8,6 +8,9 @@
 - name: Install tree 
   apt: name=tree state=present
 
+- name: Install cmake 
+  apt: name=cmake state=present
+
 - name: Install ruby and it's crap
   apt: name={{ item }} state=present
   with_items:
