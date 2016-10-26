@@ -22,6 +22,7 @@ Plugin 'git@github.com:tpope/vim-salve.git'
 Plugin 'git://github.com/tpope/vim-projectionist.git'
 Plugin 'git://github.com/tpope/vim-dispatch.git'
 Plugin 'pearofducks/ansible-vim'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
