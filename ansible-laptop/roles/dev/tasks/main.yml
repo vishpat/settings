@@ -13,6 +13,7 @@
     - cmake
     - python-dev
     - python3-dev
+    - ipcalc
   
 - name: Install ruby and it's crap
   apt: name={{ item }} state=present
