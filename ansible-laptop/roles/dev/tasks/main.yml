@@ -1,12 +1,12 @@
 ---
 - name: Install python pip 
-  apt: name=python-pip state=present
+  package: name=python-pip state=present
 
 - name: Install tree 
-  apt: name=tree state=present
+  package: name=tree state=present
 
 - name: Install C dev tools
-  apt: name={{ item }} state=present
+  package: name={{ item }} state=present
   with_items:
     - clang
     - build-essential
@@ -14,15 +14,18 @@
     - python-dev
     - python3-dev
     - ipcalc
+  ignore_errors: yes
   
 - name: Install ruby and it's crap
-  apt: name={{ item }} state=present
+  package: name={{ item }} state=present
   with_items:
     - ruby
     - ruby-dev
     - make
     - zlib1g-dev
     - libicu-dev 
+  ignore_errors: yes
 
 - name: Install gollum (the github wiki server)
-  gem: name=gollum state=present  
+  gem: name=gollum state=present 
+  ignore_errors: yes 

@@ -1,12 +1,12 @@
 ---
 - name: Install git
-  apt: name=git state=present
+  package: name=git state=present
 
 - name: Set name
-  command: git config --global user.name {{ username }}
+  command: git config --global user.name vishpat 
  
 - name: Set email 
-  command: git config --global user.name {{ email }}
+  command: git config --global user.name vishpat@gmail.com 
  
 - name: Turn off ssl verify
   command: git config --global http.sslVerify false 
