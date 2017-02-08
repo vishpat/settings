@@ -5,6 +5,9 @@
 - name: Install tree 
   package: name=tree state=present
 
+- name: Install vagrant
+  package: name=vagrant state=present
+
 - name: Install C dev tools
   package: name={{ item }} state=present
   with_items:
