@@ -5,9 +5,6 @@
 - name: Install tree 
   package: name=tree state=present
 
-- name: Install vagrant
-  package: name=vagrant state=present
-
 - name: Install C dev tools
   package: name={{ item }} state=present
   with_items:
@@ -28,6 +25,9 @@
     - zlib1g-dev
     - libicu-dev 
   ignore_errors: yes
+
+- name: Install vagrant
+  gem: name=vagrant state=present
 
 - name: Install gollum (the github wiki server)
   gem: name=gollum state=present 
