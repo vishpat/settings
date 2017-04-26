@@ -24,6 +24,10 @@ Plugin 'git://github.com/tpope/vim-dispatch.git'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'fatih/vim-go'
 Plugin 'andviro/flake8-vim'
+Plugin 'fatih/vim-go'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'jreybert/vimagit'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,3 +51,8 @@ set softtabstop=4
 syntax on
 set background=dark
 set hlsearch
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+let g:clang_library_path='/usr/lib64/llvm/libclang.so'
+noremap <F3> :Autoformat<CR>
+"au BufWrite * :Autoformat
+"au FileType c setl ofu=ccomplete#CompleteCpp
