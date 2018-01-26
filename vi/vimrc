@@ -13,20 +13,18 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'git@github.com:tpope/vim-fireplace.git'
-Plugin 'git@github.com:tpope/vim-salve.git'
-Plugin 'git://github.com/tpope/vim-projectionist.git'
-Plugin 'git://github.com/tpope/vim-dispatch.git'
+" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'pearofducks/ansible-vim'
-Plugin 'fatih/vim-go'
-Plugin 'andviro/flake8-vim'
+"Plugin 'andviro/flake8-vim'
 Plugin 'fatih/vim-go'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'jreybert/vimagit'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'davidhalter/jedi-vim'
 
 
 " All of your Plugins must be added before the following line
