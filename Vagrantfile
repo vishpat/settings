@@ -83,5 +83,6 @@ Vagrant.configure("2") do |config|
     apt-get update
     apt-get install docker-ce
     apt-cache madison docker-ce
+    pip install -y flask
   SHELL
 end
