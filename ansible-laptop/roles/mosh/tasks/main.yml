@@ -1,3 +1,6 @@
 ---
+- name: Install EPEL release
+  package: name=epel-release
+
 - name: Install mosh 
   package: name=mosh state=present 
