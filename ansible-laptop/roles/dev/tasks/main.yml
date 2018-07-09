@@ -9,21 +9,19 @@
   package: name={{ item }} state=present
   with_items:
     - clang
-    - build-essential
+    - "@Development tools" 
     - cmake
-    - python-dev
-    - python3-dev
-    - ipcalc
+    - python-devel
   ignore_errors: yes
   
 - name: Install ruby and it's crap
   package: name={{ item }} state=present
   with_items:
     - ruby
-    - ruby-dev
+    - ruby-devel
     - make
-    - zlib1g-dev
-    - libicu-dev 
+    - zlib-devel
+    - libicu-devel 
   ignore_errors: yes
 
 - name: Install vagrant

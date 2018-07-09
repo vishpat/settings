@@ -22,3 +22,4 @@
            creates="{{ golang_path }}/bin/godep"
   environment:
     GOPATH: "{{ golang_path }}"
+  ignore_errors: yes
