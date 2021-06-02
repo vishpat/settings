@@ -1,3 +1,5 @@
+# INSTALL O' MY ZSH
+
 function kctl_sc_runners() {
   kubectl --kubeconfig ~/.kube/config -n namespace $@
 }
