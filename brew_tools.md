@@ -1,0 +1,7 @@
+- dust (alternative to du)
+- exa (alternative to ls)
+- wireshark
+- tokie
+- fd (alternative to find)
+- tldr (alternative to man)
+- fselect (SQL interface to filesystem)
